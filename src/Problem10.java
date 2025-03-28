@@ -17,12 +17,14 @@ public class Problem10 {
     }
     public static int GCD(int a, int b) {
         /**
-         * Recursively calculates the Greatest Common Divisor (GCD) using Euclidean Algorithm.
+         * Recursively calculates the Greatest Common Divisor (GCD) using the Euclidean Algorithm.
+         * It repeatedly replaces (a, b) with (b, a % b) until b becomes 0.
+         *
          * Formula: GCD(a, b) = GCD(b, a % b)
          * Base Case: If b == 0, return a.
-         * Time Complexity
-         O(\log(\min(a, b)))
-
+         *
+         * Time Complexity: O(log(min(a, b))) (logarithmic due to division at each step)
+         * Space Complexity: O(log(min(a, b))) (due to recursion depth)
          *
          * @param a First number
          * @param b Second number

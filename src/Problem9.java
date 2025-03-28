@@ -15,12 +15,13 @@ public class Problem9 {
     }
 
     public static int binominalCoefficient(int n, int k) {
-
         /**
          * Recursively calculates the binomial coefficient C(n, k).
-         * Formula: C(n, k) = C(n-1, k-1) + C(n-1, k)
-         * Base cases: C(n, 0) = C(n, n) = 1
-         * TimeComplexity o(n)
+         * It follows the formula: C(n, k) = C(n-1, k-1) + C(n-1, k).
+         * Base cases: C(n, 0) = C(n, n) = 1.
+         *
+         * Time Complexity: O(2ⁿ) (exponential growth due to recursive branching)
+         * Space Complexity: O(n) (recursion depth)
          *
          * @param n The total number of elements.
          * @param k The number of elements to choose.

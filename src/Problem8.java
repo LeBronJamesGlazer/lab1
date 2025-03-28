@@ -17,7 +17,11 @@ public class Problem8 {
     public static boolean isDigit (String s, int index) {
         /**
          * Recursively checks if all characters in a string are digits.
-         * Time complexity o(n)
+         * It checks the current character, then calls itself for the next character.
+         * If any character is non-numeric, it returns false.
+         *
+         * Time Complexity: O(n) (each character is checked once)
+         * Space Complexity: O(n) (due to recursion call stack)
          *
          * @param s The input string to check.
          * @param index The current character index being checked.

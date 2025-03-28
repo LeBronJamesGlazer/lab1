@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem1 {
 
     /**
      * This method finds the minimum element in an array using recursion.
